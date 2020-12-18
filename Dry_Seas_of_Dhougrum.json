@@ -1,0 +1,419 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "DrySeasofDhougrum",
+				"abbreviation": "DSD",
+				"full": "Dry Seas of Dhougrum",
+				"url": "",
+				"authors": [
+					"16-Bit"
+				],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1608280809,
+		"dateLastModified": 1608280809
+	},
+	"monster": [
+		{
+			"name": "Skeleton Bonewheel",
+			"source": "DrySeasofDhougrum",
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"special": "11 (bonewheel)"
+				}
+			],
+			"hp": {
+				"formula": "2d8 + 4",
+				"average": 13
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 10,
+			"dex": 11,
+			"con": 15,
+			"int": 6,
+			"wis": 8,
+			"cha": 5,
+			"senses": [
+				"Darkvision 60 ft."
+			],
+			"passive": 9,
+			"immune": [
+				"poison"
+			],
+			"vulnerable": [
+				"bludgeoning"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"languages": [
+				"understands all languages it spoke in life but can't speak"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Charge",
+					"entries": [
+						"If the skeleton moves at least 20 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 2 ({@damage 1d4}) piercing damage. If the target is a creature, it must succeed on a {@dc 10} Strength saving throw or be knocked {@condition prone}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Spin",
+					"entries": [
+						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}10 ({@damage 4d4}) damage. After this attack, the bonewheel skeleton is {@condition incapacitated} until the end of its next turn, whether or not the attack is successful."
+					]
+				}
+			],
+			"environment": [
+				"arctic",
+				"desert",
+				"forest",
+				"mountain",
+				"swamp",
+				"underdark"
+			],
+			"tokenUrl": "https://i.imgur.com/BRo7Eui.png",
+			"traitTags": [
+				"Charge"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"CS",
+				"LF"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "Brigand Fusilier",
+			"source": "DrySeasofDhougrum",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"studded leather armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "3d8 + 3",
+				"average": 16
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 13,
+			"con": 12,
+			"int": 11,
+			"wis": 10,
+			"cha": 9,
+			"passive": 10,
+			"languages": [
+				"Common"
+			],
+			"cr": "1/4",
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6 + 1}) damage."
+					]
+				},
+				{
+					"name": "Musket",
+					"entries": [
+						"{@atk rw} {@hit 3} to hit, range 80/320 ft., one target. {@h}7 ({@damage 1d10 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Blanket Fire",
+					"entries": [
+						"The fusilier fires a buckshot in a 30-foot cone. Each creature in that area must make a {@dc 11} Dexterity saving throw, taking 2 ({@damage 1d4}) piercing damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/1v1sofL.png",
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RW"
+			]
+		},
+		{
+			"name": "Brigand Cutthroat",
+			"source": "DrySeasofDhougrum",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"studded leather armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "3d8 + 3",
+				"average": 16
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 13,
+			"con": 13,
+			"int": 11,
+			"wis": 10,
+			"cha": 9,
+			"passive": 10,
+			"languages": [
+				"Common"
+			],
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Shank (1/Turn)",
+					"entries": [
+						"The cutthroat deals an extra 3 ({@damage 1d6}) damage when it hits a target with a weapon Attack and has advantage on the Attack roll, or when the target is within 5 ft. of an ally of the cutthroat that isn’t Incapacitated and the cutthroat doesn’t have disadvantage on the Attack roll."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack.",
+					"entries": [
+						"The cutthroat makes 2 attacks with their daggers, the second one is made with disadvantage."
+					]
+				},
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/Qh4ZGjQ.png",
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Phalanx",
+			"source": "DrySeasofDhougrum",
+			"page": 0,
+			"size": "M",
+			"type": "monstrosity",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor",
+						"{@item shield|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 30,
+				"formula": "4d10 + 8"
+			},
+			"speed": {
+				"walk": 10
+			},
+			"str": 17,
+			"dex": 4,
+			"con": 15,
+			"trait": [
+				{
+					"name": "",
+					"entries": [
+						"NT 4 (-3)",
+						"WIS 8 (·1)",
+						"Condition Immunities {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition exhaustion}, {@condition frightened}. {@condition prone}",
+						"Senses blindsight 90ft. passive Perception 9",
+						"Languages- Challenge 1 (200 XP)",
+						"CHA 1 (·5)"
+					]
+				},
+				{
+					"name": "Bulwark",
+					"entries": [
+						"If the phalanx is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage. and it is within 5 feet of at least two allied phalanx, it can use its"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "interposing its shield between itse lf and the source of the",
+					"entries": [
+						" effect."
+					]
+				},
+				{
+					"name": "Regenerating Weapon",
+					"entries": [
+						"If the phalanx is not armed with a pike at the start of its tu rn, it may use a free action to crea te a pike from its in ternal mass."
+					]
+				},
+				{
+					"name": "Shieldwa/1",
+					"entries": [
+						"The phalanx gains +1 to its AC and Dexterity saving throws for each allied phalanx within 5 feet it. up to a maximum of +5 tota l, as it uses its sh ield in creating a defensive formation.",
+						"A CTIONS"
+					]
+				},
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The phalanx makes two melee weapon attacks."
+					]
+				},
+				{
+					"name": "Pike",
+					"entries": [
+						"Melee or Ranged WeapanAttack: {@hit 5} to hit, reach 10 ft., or range 20/40 ft., one target. {@h}8 ({@damage 1d10 + 3}) piercing damage."
+					]
+				}
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"RCH"
+			]
+		},
+		{
+			"name": "Old Nick",
+			"source": "DrySeasofDhougrum",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item chain shirt|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 104,
+				"formula": "11d8 + 55"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 14,
+			"con": 21,
+			"int": 9,
+			"wis": 11,
+			"cha": 9,
+			"senses": [
+				"truesight 60 ft."
+			],
+			"passive": 10,
+			"languages": [
+				"Common"
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"name": "Reckless",
+					"entries": [
+						"At the start of its turn, the berserker can gain advantage on all melee weapon attack rolls during that turn, but attack rolls against it have advantage until the start of its next turn."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Gift Sack",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}17 ({@damage 3d6 + 2}) bludgeoning damage."
+					]
+				}
+			],
+			"environment": [
+				"arctic"
+			],
+			"tokenUrl": "https://5e.tools/img/MM/Berserker.png?v=1.117.3",
+			"altArt": [
+				{
+					"name": "Diabolical Berserker",
+					"source": "MTF",
+					"page": 18
+				}
+			],
+			"traitTags": [
+				"Reckless"
+			],
+			"senseTags": [
+				"U"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			]
+		}
+	]
+}
